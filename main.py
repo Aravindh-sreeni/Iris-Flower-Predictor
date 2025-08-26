@@ -16,7 +16,7 @@ sepal_width=st.number_input("sepal width",placeholder="please enter a valid sepa
 user_input = pd.DataFrame([[sepal_length,sepal_width,petal_length,petal_width]],
                           columns=['sepal_length','sepal_width','petal_length','petal_width'])
 #using the .pkl file, creating an ML model named "iris predictor"
-model_path = path.join("Model","iris_classifier.pkl")
+model_path = path.join("model","iris_classifier.pkl")
 with open (model_path,'rb') as file:
     iris_predictor=pickle.load(file)
 
